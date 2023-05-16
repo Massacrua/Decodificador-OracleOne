@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Decodificador</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.jpeg" alt="Logo do site, um cadeado">
+            <h1>Misterebera</h1>
+        </div>
+    </header>
+
+    <main>
+        <div class="flex">
+            <section class="input-area">
+                <textarea name="input" id="input" cols="30" rows="10" placeholder="Digite seu texto"></textarea>
+                <button class="codificar botao">Codificar</button>
+                <button class="decodificar botao">Decodificar</button>
+            </section>
+            
+            <section class="output-area">
+                 
+                <p class="output-text"></p>
+                <div class="output-content">
+                    <img src="esperando.png" alt="Bonequinho esperando seu texto" id="bg-img">               
+                    <p>Nenhuma mensagem encontrada.</p>
+                    <p>Digite um texto que você deseja codificar ou decodificar.</p>
+                </div>
+                <button class="botao" id="copiar">Copiar</button>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>by Massacrua & Alura</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
