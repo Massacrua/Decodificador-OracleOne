@@ -2,6 +2,7 @@ const codeButton = document.querySelector(".codificar")
 const decodeButton = document.querySelector(".decodificar")
 const copyButtom = document.querySelector("#copiar")
 const outputText = document.querySelector(".output-text")
+outputText.style.display = "none"
 
 function codeText() {
     let string = document.querySelector("#input").value
@@ -37,6 +38,7 @@ function printResult(string) {
     if (string.length > 0) {
         document.querySelector(".output-content").style.display = "none"
         document.querySelector(".output-text").innerHTML = string
+        document.querySelector(".output-text").style.display = "block"
     }
 }
 
